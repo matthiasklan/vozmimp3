@@ -16,7 +16,7 @@ var data = {
   q: 'cedar m Planet Of Tokyo',
   limit: 5, //default: 20
   sort: {
-    keys: ['duration'] //(duration, title, link) default: title  
+    keys: ['duration'], //(duration, title, link) default: title  
     order: ['desc'] //(asc, desc) default: asc
     //hint: you can use multiple keys and corresponding orders (that's why the array is for)
   }
