@@ -1,0 +1,21 @@
+{
+  "name": "vozmimp3",
+  "version": "0.0.1",
+  "description": "API for vozmimp3.com",
+  "main": "src/vozmiMp3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mp3",
+    "download",
+    "vozmimp3"
+  ],
+  "author": "Matthias Klan <matthias.klan@gmail.com> (http://github.com/matthiasklan)",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "lodash": "^4.8.1",
+    "scraperjs": "^1.2.0"
+  }
+}
