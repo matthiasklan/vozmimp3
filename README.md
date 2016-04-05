@@ -28,3 +28,25 @@ vozmimp3.queryVozmiMp3(data).then(function(result){
   console.log(err);
 }
 ```
+
+`getPlaylist` lets you create playlists. Provide a `list` key with an array of search queries. For best results use very specific title searches. The API will return one result per item. You can specify a `strategy` to retrieve the item with the longest duration
+
+```javascript
+var vozmimp3 = require('vozmimp3');
+
+var data = {
+  list: 
+  ['cedar m Planet Of Tokyo',
+   'Zonderling Sonderling',
+   'dj matthiasKlan',
+   'Rude 66 - The 1000 Year Storm'
+  ],
+  strategy : 'longestDuration' //default: first
+}
+
+vozmimp3.getPlaylist(data).then(function(result){
+  console.log(result);
+}).catch(function (err){
+  console.log(err);
+}
+```
