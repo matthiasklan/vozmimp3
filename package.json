@@ -1,6 +1,6 @@
 {
   "name": "vozmimp3",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "API for vozmimp3.com",
   "main": "src/vozmiMp3.js",
   "scripts": {
@@ -11,8 +11,16 @@
     "download",
     "vozmimp3"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthiasklan/vozmimp3.git"
+  },
   "author": "Matthias Klan <matthias.klan@gmail.com> (http://github.com/matthiasklan)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthiasklan/vozmimp3/issues"
+  },
+  "homepage": "https://github.com/matthiasklan/vozmimp3#readme",
   "dependencies": {
     "bluebird": "^3.3.4",
     "lodash": "^4.8.1",

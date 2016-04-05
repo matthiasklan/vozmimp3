@@ -1,5 +1,5 @@
 # vozmimp3
-custom scraper API for querying the vozmimp3.com MP3 Database
+custom scraper API for querying the vozmimp3.com MP3 database
 
 ##install
 
@@ -35,7 +35,7 @@ vozmimp3.queryVozmiMp3(data).then(function(result){
 var vozmimp3 = require('vozmimp3');
 
 var data = {
-  list: 
+  list:
   ['cedar m Planet Of Tokyo',
    'Zonderling Sonderling',
    'dj matthiasKlan',
