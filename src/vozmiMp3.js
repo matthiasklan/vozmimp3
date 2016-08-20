@@ -24,7 +24,7 @@ module.exports = {
       }
 
       const transformSearchString = function(searchString) {
-        return searchString.replace(' ', '+');
+        return searchString.replace(/ /g, '+');
       };
 
       scraperjs.StaticScraper.create('http://vozmimp3.com/?string=' + transformSearchString(data.q))
