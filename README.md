@@ -46,7 +46,7 @@ const data = {
 
 vozmimp3.getPlaylist(data).then((result) => {
   console.log(result);
-}).catch(function (err){
+}).catch((err) => {
   console.log(err);
 });
 ```
