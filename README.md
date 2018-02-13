@@ -1,7 +1,7 @@
 # vozmimp3
 custom scraper API for querying the vozmimp3.com MP3 database
 
-##install
+## install
 
 `npm install vozmimp3`
 
@@ -10,21 +10,21 @@ custom scraper API for querying the vozmimp3.com MP3 database
 to search for a mp3 title or an artist use the `queryVozmiMp3` method. Provide a data object with key `q` and the value of the query string. Optionally you can limit and sort your results.
 
 ```javascript
-var vozmimp3 = require('vozmimp3');
+const vozmimp3 = require('vozmimp3');
 
-var data = {
+const data = {
   q: 'cedar m Planet Of Tokyo',
   limit: 5, //default: 20
   sort: {
     keys: ['duration'], //(duration, title, link) default: title  
     order: ['desc'] //(asc, desc) default: asc
-    //hint: you can use multiple keys and corresponding orders (that's why the array is for)
+    //hint: you can use multiple keys and corresponding orders
   }
 }
 
-vozmimp3.queryVozmiMp3(data).then(function(result){
+vozmimp3.queryVozmiMp3(data).then((result) => {
   console.log(result);
-}).catch(function (err){
+}).catch((err) => {
   console.log(err);
 });
 ```
@@ -32,9 +32,9 @@ vozmimp3.queryVozmiMp3(data).then(function(result){
 `getPlaylist` lets you create playlists. Provide a `list` key with an array of search queries. For best results use very specific title searches. The API will return one result per item. You can specify a `strategy` to retrieve the item with the longest duration
 
 ```javascript
-var vozmimp3 = require('vozmimp3');
+const vozmimp3 = require('vozmimp3');
 
-var data = {
+const data = {
   list:
   ['cedar m Planet Of Tokyo',
    'Zonderling Sonderling',
@@ -44,7 +44,7 @@ var data = {
   strategy : 'longestDuration' //default: first
 }
 
-vozmimp3.getPlaylist(data).then(function(result){
+vozmimp3.getPlaylist(data).then((result) => {
   console.log(result);
 }).catch(function (err){
   console.log(err);
