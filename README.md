@@ -1,6 +1,8 @@
 # vozmimp3
 custom scraper API for querying the vozmimp3.com MP3 database
 
+> __Warning:__ https://vozmimp3.com is down, so this service does not work anymore!
+
 ## install
 
 `npm install vozmimp3`
